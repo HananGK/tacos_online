@@ -1,9 +1,7 @@
 package com.hanan.tacosonline.data;
 
 import com.hanan.tacosonline.model.Order;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.repository.CrudRepository;
 
-@Repository
-public interface OrderRepository {
-    Order save(Order order);
+public interface OrderRepository extends CrudRepository<Order, Long>{
 }
